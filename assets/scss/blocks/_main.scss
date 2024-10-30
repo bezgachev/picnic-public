@@ -1,0 +1,106 @@
+.main {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 26.5%, rgba(0, 0, 0, 0.7) 100%), url('../img/main-bg.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 537px;
+    @media (max-width: 576px) {
+        min-height: auto;
+    }
+    &__title {
+        padding-top: 50px;
+        @media (max-width: 576px) {
+            padding-top: 100px;
+        }
+        @media (max-width: 320px) {
+            padding-top: 140px;
+        }
+        &-text {
+            display: none;
+        }
+        &-img {
+            width: 532px;
+        }
+    }
+    & .container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: 576px) {
+            padding-bottom: 60px;
+        }
+    }
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 30px;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+        position: relative;
+        max-width: 270px;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 10px;
+            top: 15px;
+            background-color: #fff;
+            opacity: 0.5;
+        }
+        &::before {
+            left: -30px;
+        }
+        &::after {
+            right: -30px;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0 34px;
+        min-height: 48px;
+        border: 2px solid #fff;
+        border-radius: 28px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        @media (max-width: 576px) {
+            background: #F88625;
+            border: 2px solid #F88625;
+            color: #fff;
+            &::before {
+                // display: none;
+                background: #fff;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 28px;
+            opacity: 0.5;
+            filter: blur(30px);
+            background: #fcb671;
+            opacity: 0.3;
+            transition: all 0.3s ease;
+        }
+        @media (hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+            &:hover::before {
+                opacity: 0;
+            }
+        }
+
+    }
+}

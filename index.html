@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://svchurch.ru/wp-content/uploads/2021/04/cropped-android-chrome-512x512-1-1-192x192.png">
+    <title>Регистрация | Сила Воскресения</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header">
+                <a href="https://svchurch.ru" class="header__logo" target="_blank">
+                    <img src="assets/img/church-logo.png" class="header__logo-img user-select-false" alt="Логотип Сила Воскресения" />
+                </a>
+                <div class="header__descr">
+                    Местная религиозная организация Церковь христиан веры евангельской (пятидесятников)<br>«Сила Воскресения» г.Казани
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="container">
+                <h1 class="main__title">
+                    <div class="main__title-text">Общецерковный пикник</div>
+                    <img src="assets/img/main-title-img.svg" class="main__title-img user-select-false" />
+                </h1>
+                <div class="main__subtitle">
+                    4 августа 11:00
+                </div>
+                <a href="#register" class="main__btn">Пройти регистрацию</a>
+                <a href="#scrollToPayment" class="hide"></a>
+            </div>
+        </div>
+        <div class="video__wrapper">
+            <div class="video">
+                <div class="container">
+                    <h2 class="video__title">Что за пикник? <span>Посмотри это видео!</span></h2>
+                    <div class="video__section">
+                        <div id="iframe"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="plan">
+            <div class="blur">
+                <div class="container">
+                    <h2 class="plan__title">Расписание пикника</h2>
+                    <ul class="plan__items">
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>11:00</div>
+                                <span></span>
+                                <div>12:00</div>
+                                <span></span>
+                            </div>
+                            <span class="plan__item-title">Регистрация</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>12:00</div>
+                                <span></span>
+                                <div>14:00</div>
+                                <span></span>
+                            </div>
+                            <span class="plan__item-title">Богослужение</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>14:00</div>
+                                <span></span>
+                                <div>15:00</div>
+                                <span></span>
+                            </div>
+                            <span class="plan__item-title">Обед</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>15:00</div>
+                                <span></span>
+                                <div>16:00</div>
+                                <span></span>
+                            </div>
+                            <span class="plan__item-title">Игровые зоны</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>16:00</div>
+                                <span></span>
+                                <div>16:15</div>
+                                <span></span>    
+                            </div>
+                            <span class="plan__item-title">Кофе-брейк</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>16:15</div>
+                                <span></span>
+                                <div>16:40</div>
+                                <span></span>    
+                            </div>
+                            <span class="plan__item-title">Батл поколений</span>
+                        </li>
+                        <li class="plan__item">
+                            <div class="plan__item-time">
+                                <div>16:40</div>
+                                <span></span>
+                                <div>17:40</div>
+                                <span></span>
+                            </div>
+                            <span class="plan__item-title">Вечер хвалы</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts__info info">
+                    <h2 class="info__title">Место встречи</h2>
+                    <div class="info__descr">
+                        <div class="info__descr-item">
+                            <span>Заведение: </span>
+                            “Поляна Невест”
+                        </div>
+                        <div class="info__descr-item">
+                            <span>Адрес: </span>
+                            Мира, 49а (п. Красницский, Зеленодольский район, Республика Татарстан)
+                        </div>
+                        <div class="info__descr-item">
+                            <span>Остановка: </span>
+                            “Урняк”
+                        </div>
+                        <div class="info__descr-item">
+                            <span>Автобусы: </span>
+                            104, 110
+                        </div>
+                        <div class="info__descr-item">
+                            <span>Тел. для справок:  </span>
+                            <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__map" id="map">
+                </div>
+            </div>
+        </div>
+        <div class="register" id="register">
+             <div class="container">
+                <h2 class="register__title">Регистрация на пикник</h2>
+                <div class="register__subtitle">
+                    До закрытии регистрации
+                    <span id="timer"></span>
+                </div>
+                <div class="register__wrapper form">
+                    <div class="form__data">
+                        <div class="form__input data-basic">
+                            <div class="form__input-personal part-1">
+                                <span class="el-1">1.</span>
+                                <input placeholder="Фамилия имя*" name="name" type="text" autocomplete="off" class="el-2"/>
+                                <input placeholder="Возраст*" name="age" type="text" autocomplete="off" inputmode="numeric" class="el-3"/>
+                                <input placeholder="Номер телефона*" name="phone" type="phone" autocomplete="off" inputmode="numeric" class="el-4" />
+                            </div>
+                            <div class="form__input-message part-4">
+                                <textarea rows="3" name="message" placeholder="Комментарий (по желанию)" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="form__btn-add-person"  id="scrollToPayment" data-add>+ Добавить человека</div>
+                    </div>
+                    <div class="form__info-payment payment">
+                        <div class="payment__title">Пожертвование на осуществление<br>уставной деятельности</div>
+                        <div class="payment__subtitle"></div>
+
+                        <div class="payment__processing processing hide">
+                            <div class="processing__loading"><svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+                            <div class="processing__status"></div>
+                            <div class="processing__button"></div>
+                        </div>
+                        <div class="payment__wrapper">
+                            <input placeholder="Введите Email*" name="email" type="email" class="payment__email"/>
+                            <div class="payment__info">Заполните все поля</div>
+                            <div class="payment__btn preparation">Зарегистрироваться</div>
+      
+                            <div class="payment__politics">
+                                Нажимая кнопку “Зарегистрироваться”,<br>вы даете согласие на обработку<br>
+                                <a href="https://svchurch.ru/privacy-policy" target="_blank">персональных данных</a>, а также с условиями<br><a href="https://svchurch.ru/wp-content/uploads/2021/12/Публичная-оферта-.pdf" target="_blank">публичной оферты</a>
+                            </div>
+                            <form method="POST" action="https://yoomoney.ru/quickpay/confirm" id="payment-transfer-form" class="hide">
+                                <input type="hidden" name="receiver" />
+                                <input type="hidden" name="label" />
+                                <input type="hidden" name="quickpay-form" value="button" />
+                                <input type="hidden" name="sum" data-type="number" />
+                                <input type="hidden" name="paymentType" value="AC" />
+                                <input type="hidden" name="successURL" value="https://picnic.svchurch.ru" />
+                                <input type="submit" value="Пожертвование на осуществление уставной деятельности" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <a href="#header" class="hide">Up</a>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <span>Местная религиозная организация Церковь христиан веры евангельской (пятидесятников)<br>«Сила Воскресения» г.Казани</span>
+            <a href="https://svchurch.ru/privacy-policy" target="_blank">Политика обработки персональных данных</a>
+            <a href="https://svchurch.ru/wp-content/uploads/2021/12/Публичная-оферта-.pdf" target="_blank">Публичная оферта о заключении договора дарения</a>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=96773228-e3a9-4c55-ba2a-8f1e2aca1747&lang=ru_RU"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

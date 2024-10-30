@@ -1,0 +1,83 @@
+.plan {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../img/plan-bg.jpg') bottom no-repeat;
+    background-size: cover;
+    .blur {
+        backdrop-filter: blur(2px);
+        @media (max-width: 576px) {
+            backdrop-filter: blur(0.8px);
+        }
+    }
+    &__title {
+        color: #fff;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 40px 50px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        max-width: 440px;
+        margin: 0 auto;
+        margin-top: 30px;
+        @media (max-width: 576px) {
+            margin-top: 15px;
+            padding: 40px 0px 40px 20px;
+        }
+        @media (max-width: 400px) {
+            padding: 20px 0px;
+            row-gap: 20px;
+        }
+    }
+    &__item{
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 20px;
+        @media (max-width: 400px) {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            row-gap: 0;
+            & span:nth-child(4) {
+                display: none;
+            }
+        }
+        &-time {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            @media (max-width: 400px) {
+                column-gap: 5px;
+            }
+            & div {
+                color: #fcb671;
+                padding: 0 10px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 28px;
+                @media (max-width: 400px) {
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                }
+            }
+            & span {
+                height: 1px;
+                background: rgba(255, 255, 255, 0.5);
+                &:nth-child(2) {
+                    width: 5px;
+                }
+                &:nth-child(4) {
+                    width: 10px;
+                }
+            }
+
+        }
+        &-title {
+            color: #fff;
+        }
+
+    }
+}
